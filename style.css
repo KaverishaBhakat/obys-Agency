@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: "Plain light"; */
     color: white;
     font-weight: 100;
 }
@@ -11,6 +10,28 @@ html,
 body {
     height: 100%;
     font-weight: 100%;
+    overflow: hidden;
+    cursor: none;
+}
+
+#main {
+    position: relative;
+    background-color: #111;
+}
+
+#crsr {
+    height: 2.5vw;
+    width: 2.5vw;
+    border-radius: 50%;
+    position: fixed;
+    background-color: transparent;
+    border: 1.5px solid #948f8f;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    mix-blend-mode: difference;
+    opacity: 0;
+
 }
 
 #loader {
@@ -23,6 +44,7 @@ body {
     padding-top: 18vh;
 }
 
+
 .line {
     height: 14.5vh;
     overflow: hidden;
@@ -32,16 +54,6 @@ body {
     gap: 6vw;
     line-height: 4;
     font-family: "Plain light";
-    /* background-color: cornflowerblue; */
-}
-
-.line h2 {
-    font-size: 7vw;
-    font-weight: 600;
-    margin-left: -4vw;
-    /* background-color: cadetblue; */
-    position: relative;
-
 }
 
 #line1-part1 {
@@ -49,7 +61,7 @@ body {
     align-items: center;
     justify-content: center;
     padding-bottom: 5vh;
-    padding-left: 30px;
+    padding-left: 2.1vw;
     gap: 1vw;
 }
 
@@ -62,68 +74,206 @@ body {
 
 #line1-part1 h5 {
     text-align: right;
-    /* background-color: aqua; */
     padding-bottom: -2vh;
     width: 6vw;
-
 }
-
 
 .line h1 {
     font-size: 7vw;
     font-weight: 600;
-    letter-spacing: 5px;
-    word-spacing: -10px;
-    /* background-color: aquamarine; */
+    letter-spacing: 0.3vw;
+    word-spacing: -0.7vw;
+}
+
+.line h2 {
+    font-size: 7vw;
+    font-weight: 600;
+    margin-left: -4vw;
+    position: relative;
+}
+
+.line h2 {
+    font-size: 6.9vw;
+    animation-name: anime;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime {
+    0% {
+        font-family: "plain light";
+        -webkit-text-stroke: 0.1vw #fff;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    50% {
+        font-family: "silk serif";
+        -webkit-text-stroke: 0.1vw #fff;
+        font-weight: 500;
+        color: transparent;
+    }
+
+    100% {
+        font-family: "plain light";
+        -webkit-text-stroke: 0.1vw #fff;
+        font-weight: 500;
+        color: #fff;
+    }
 }
 
 #snote {
     height: fit-content;
-    padding-left: 350px;
-    margin-top: 13vh;
+    padding-left: 22.7vw;
+    margin-top: 9.2vh;
 }
 
 .note {
     font-size: 1.2vw;
-    line-height: 21px;
+    line-height: 1.4vw;
     font-family: "Plain light";
-}
-.line h2{
-    font-size: 6.9vw;
-    /* font-weight: 600; */
-    animation-name: anime;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    
-}
-@keyframes anime{
-     0%{
-        font-family: "plain light";
-        -webkit-text-stroke: 1px #fff;
-        font-weight: 500;
-        color: #fff;
-     }
-    50%{
-        font-family: "silk serif";
-        -webkit-text-stroke: 1px #fff;
-        font-weight: 500;
-        color: transparent;
-    }
-    100%{
-        font-family: "plain light";
-        -webkit-text-stroke: 1px #fff;
-        font-weight: 500;
-        color: #fff;
-    }
-}
-#main {
-    position: relative;
-    background-color: #111;
-    overflow: hidden;
 }
 
 #page1 {
     height: 100vh;
     width: 100vw;
     background-color: #151515;
+}
+
+#page1 #nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6vw 5.5vh;
+}
+
+#nav-pt1 {
+    /* background-color: chocolate; */
+    padding-left: 2.5vw;
+    padding-top: 0.2vh;
+    display: flex;
+    align-items: center;
+    gap: 2.5vw;
+}
+
+#nav-left {
+    display: flex;
+    align-items: center;
+    gap: 15vw;
+}
+
+#nav-pt2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5vw;
+    padding-right: 2.5vw;
+    position: relative;
+}
+
+#nav-pt2 h4 {
+    font-family: "plain light";
+    font-size: 0.97vw;
+    font-weight: 500;
+    /* background-color: blue; */
+}
+
+#counting1 {
+    padding: 3vw;
+    text-align: right;
+}
+
+.hero {
+    width: 72%;
+    margin-left: 27.5%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 9999;
+}
+
+.hero:nth-child(2) {
+    margin-top: 15.3vh;
+}
+
+.hero h1 {
+    font-family: "plain light";
+    font-size: 7.1vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.3vw;
+    word-spacing: -0.7vw;
+    line-height: 14.8vh;
+}
+
+#hero4 h1 {
+    line-height: 13vh;
+}
+
+.hero h2,
+.hero h3 {
+    font-family: "plain light";
+    font-size: 7.2vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.3vw;
+    /* word-spacing: -10vw; */
+    line-height: 14vh;
+}
+
+.hero h2 {
+    border-bottom: 0.59vw solid #fff;
+    margin-right: 0.9vw;
+    padding-bottom: 0.4vh;
+}
+
+.hero h2:hover {
+    -webkit-text-stroke: 0.1vw #fff;
+    color: transparent;
+    font-weight: 500;
+    border-bottom: 0.59vw solid #151515;
+}
+
+.hero h3 {
+    font-size: 7vw;
+    margin-bottom: 0.8vh;
+}
+
+#nav-note {
+    /* background-color: aqua; */
+    height: fit-content;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    padding-top: 2.7vw;
+}
+
+.nnote h5 {
+    font-size: 0.99vw;
+    line-height: 2.05vh;
+    font-family: "Plain light";
+    font-weight: 550;
+    margin: 0;
+}
+
+.scroll {
+    display: flex;
+    align-items: center;
+    padding: 0.5vh 2.5vw;
+    justify-content: center;
+    position: absolute;
+    left: 2.6vw;
+    bottom: 12vh;
+    overflow: hidden;
+}
+
+.scroll h5 {
+    font-size: 1vw;
+    color: #615c5c;
+    font-family: "Plain light";
+    font-weight: 600;
 }
