@@ -41,10 +41,10 @@ function LoadingPage() {
     })
 
     // upcoming of page1
-    tl.from("#page1", {
+    tl.from("#page1, #page2", {
         y: 1200,
         opacity: 0,
-        duration: 1,
+        duration: 1.5,
         ease: "expo.out"
     })
 
@@ -89,6 +89,15 @@ function LoadingPage() {
     tl.to("#loader", {
         display: "none",
     })
+
+    // tl.from("#page2", {
+    //     y:120,
+    //     opacity: 0,
+    //     delay:0.1,
+    //     duration:0.1,
+    //     ease: "expo.out"
+
+    // },"-=0.8")
 }
 function cursorAnimation() {
     document.addEventListener("mousemove", function (dets) {
