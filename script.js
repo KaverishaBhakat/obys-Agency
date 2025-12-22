@@ -61,11 +61,11 @@ function LoadingPage() {
         stagger: 0.1,
     }, "-=0.9")
 
-     tl.from("#counting",{
+    tl.from("#counting", {
         // ease: "expo.in",
         opacity: 0,
         duration: 1.5
-    },"-=0.9")
+    }, "-=0.9")
 
     // the upcoming of nav elements
     tl.from("#nav", {
@@ -97,7 +97,7 @@ function LoadingPage() {
         display: "none",
     })
 
-   
+
 }
 function cursorAnimation() {
     document.addEventListener("mousemove", function (dets) {

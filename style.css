@@ -369,8 +369,7 @@ body {
     overflow: hidden;
 }
 
-#counting1 h2 
-{
+#counting1 h2 {
     font-family: silk serif;
     font-size: 3.3vw;
 }
@@ -378,30 +377,31 @@ body {
 #page4 #text1 {
     height: 39vh;
     width: 36vw;
-    left:27.6% ;
+    left: 27.6%;
     top: 4.5%;
     position: relative;
 }
 
-#text1 h3{
+#text1 h3 {
     font-family: plain light;
     font-size: 2.325vw;
-    
+
     word-spacing: -0.13vw;
     line-height: 5.3vh;
 }
 
-#img2{
-    height:80.1vh;
-    width:32.7vw;
+#img2 {
+    height: 80.1vh;
+    width: 32.7vw;
     top: 7.3%;
     left: 27.5%;
     position: relative;
     overflow: hidden;
     z-index: 999;
 }
-#img2 img{
-   position: absolute;
+
+#img2 img {
+    position: absolute;
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -409,22 +409,22 @@ body {
     transform: scale(1.078);
 }
 
-#text2{
+#text2 {
     height: 30vh;
     width: 19vw;
     left: 62.5%;
-    top:36.3%;
+    top: 36.3%;
     position: absolute;
 }
 
-#text2 h4{
+#text2 h4 {
     font-family: plain light;
     font-size: 0.97vw;
     font-weight: 500;
     line-height: 3vh;
 }
 
-#bluebox{
+#bluebox {
     height: 84.35vh;
     width: 32.8vw;
     background-color: #3F7DF4;
@@ -436,21 +436,22 @@ body {
     padding-left: 3.5vw;
 }
 
-.btext{
+.btext {
     width: 95%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 2.2vw 0.3vw;
-      border-bottom: 0.15vw solid #c1c1c1;
+    border-bottom: 0.15vw solid #c1c1c1;
 
 }
 
-.btext h2{
+.btext h2 {
     font-family: plain light;
     font-size: 1.6vw;
 }
-.btext h3{
+
+.btext h3 {
     width: 40%;
     font-family: plain light;
     font-size: 1vw;
