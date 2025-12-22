@@ -36,12 +36,13 @@ function LoadingPage() {
     // invisible loader
     tl.to("#loader", {
         opacity: 0,
+        // y:-1200,
         duration: 0.8,
         delay: 2.2,
     })
 
     // upcoming of page1
-    tl.from("#page1, #page2", {
+    tl.from("#page1, #page2, #page3, #page4", {
         y: 1200,
         opacity: 0,
         duration: 1.5,
@@ -59,6 +60,12 @@ function LoadingPage() {
         y: 120,
         stagger: 0.1,
     }, "-=0.9")
+
+     tl.from("#counting",{
+        // ease: "expo.in",
+        opacity: 0,
+        duration: 1.5
+    },"-=0.9")
 
     // the upcoming of nav elements
     tl.from("#nav", {
@@ -90,14 +97,7 @@ function LoadingPage() {
         display: "none",
     })
 
-    // tl.from("#page2", {
-    //     y:120,
-    //     opacity: 0,
-    //     delay:0.1,
-    //     duration:0.1,
-    //     ease: "expo.out"
-
-    // },"-=0.8")
+   
 }
 function cursorAnimation() {
     document.addEventListener("mousemove", function (dets) {
