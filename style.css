@@ -12,11 +12,10 @@ body {
     font-weight: 100%;
     /* overflow: hidden; */
     cursor: none;
-    /* background-color: #151515; */
 }
 
 #main {
-    position: relative;
+    position: absolute;
     background-color: #111;
 }
 
@@ -138,7 +137,6 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: #151515;
-    /* overflow-x: hidden; */
 }
 
 #page1 #nav {
@@ -170,7 +168,6 @@ body {
     gap: 2.5vw;
     padding-right: 2.5vw;
     position: relative;
-    /* overflow: hidden; */
 }
 
 #nav-pt2 h4 {
@@ -180,12 +177,21 @@ body {
     /* background-color: blue; */
 }
 
-#counting1 {
-    padding: 3vw;
-    text-align: right;
+#counting {
+    height: 5vw;
+    width: 5vw;
+    position: absolute;
+    left: 18.5%;
+    top: 31%;
+}
+
+#counting h2 {
+    font-family: silk serif;
+    font-size: 3.3vw;
 }
 
 .hero {
+    /* background-color: blue; */
     width: 72%;
     margin-left: 27.5%;
     overflow: hidden;
@@ -193,6 +199,7 @@ body {
     align-items: center;
     position: relative;
     z-index: 9999;
+    top: 15.3%;
 }
 
 .hero:nth-child(2) {
@@ -220,7 +227,6 @@ body {
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 0.3vw;
-    /* word-spacing: -10vw; */
     line-height: 14vh;
 }
 
@@ -280,7 +286,7 @@ body {
     font-weight: 600;
 }
 
-#page2{
+#page2 {
     height: 100vh;
     width: 100vw;
     background-color: #151515;
@@ -288,31 +294,31 @@ body {
 
 }
 
-#video{
+#video {
     height: 67vh;
     width: 72.4vw;
     position: absolute;
-    left: 27.7%;
+    left: 27.58%;
     bottom: 35.3%;
     background-image: url(&quot;https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg&quot;);
-} 
+}
 
-#video img{
+#video img {
     position: absolute;
-    height:100% ;
+    height: 100%;
     width: 100%;
     object-fit: cover;
     /* display: block; */
     top: 0;
 }
 
-#video video{
+#video video {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-#video-crsr{
+#video-crsr {
     background-color: #FFA63D;
     height: 10vw;
     width: 10vw;
@@ -326,6 +332,6 @@ body {
     justify-content: center;
 }
 
-#video-crsr i{
- font-size: 2vw;
+#video-crsr i {
+    font-size: 2vw;
 }
