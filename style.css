@@ -4,6 +4,7 @@
     box-sizing: border-box;
     color: white;
     font-weight: 100;
+    /* max-width: 100vw; */
 }
 
 html,
@@ -11,11 +12,14 @@ body {
     height: 100%;
     font-weight: 100%;
     /* overflow: hidden; */
+    overflow-x: hidden;
     cursor: none;
+
+
 }
 
 #main {
-    position: absolute;
+    position: relative;
     background-color: #111;
 }
 
@@ -135,7 +139,7 @@ body {
 
 #page1 {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-color: #151515;
 }
 
@@ -276,7 +280,7 @@ body {
     justify-content: center;
     position: absolute;
     left: 2.6vw;
-    bottom: 12vh;
+    bottom: 10.9vh;
     overflow: hidden;
 }
 
@@ -289,7 +293,7 @@ body {
 
 #page2 {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-color: #151515;
     position: relative;
 
@@ -297,7 +301,7 @@ body {
 
 #video {
     height: 67vh;
-    width: 72.4vw;
+    width: 72.4%;
     position: absolute;
     left: 27.58%;
     bottom: 35.3%;
@@ -337,7 +341,7 @@ body {
 }
 
 #page4 {
-    height: 226vh;
+    min-height: 100vh;
     width: 100%;
     background-color: #151515;
 
@@ -350,7 +354,8 @@ body {
     position: relative;
     /* border-bottom: 0.15vw solid #837d7d; */
 }
-#content3 .underline{
+
+#content3 #underline1{
     width: 100%;
     height: 0.10vw;
     margin-top: 7.8%;
@@ -358,6 +363,7 @@ body {
     background-color: #948f8f;
 
 }
+
 #content3 h1 {
     font-family: plain light;
     text-transform: uppercase;
@@ -373,7 +379,7 @@ body {
     width: 5vw;
     position: absolute;
     left: 18.2%;
-    top: 0.3%;
+    top: 0.22%;
     overflow: hidden;
 }
 
@@ -386,7 +392,7 @@ body {
     height: 39vh;
     width: 36vw;
     left: 27.6%;
-    top: 3%;
+    margin-top: 3.5%;
     position: relative;
 }
 
@@ -401,7 +407,7 @@ body {
 #img2 {
     height: 80.2vh;
     width: 32.7vw;
-    top: 5.65%;
+    margin-top: 3.1%;
     left: 27.5%;
     position: relative;
     overflow: hidden;
@@ -421,7 +427,7 @@ body {
     height: 30vh;
     width: 19vw;
     left: 62.5%;
-    top: 34.5%;
+    margin-top: 2.5%;
     position: absolute;
 }
 
@@ -438,7 +444,7 @@ body {
     background-color: #3F7DF4;
     position: relative;
     z-index: 9999;
-    bottom: 6%;
+    margin-top: -13.3%;
     left: 50.6%;
     padding: 3vw;
     padding-left: 3.5vw;
@@ -463,4 +469,32 @@ body {
     width: 40%;
     font-family: plain light;
     font-size: 1vw;
+}
+
+
+#underline2{
+    width: 67.2vw;
+    left: 27.6%;
+    height: 0.10vw;
+    margin-top: 9.5%;
+    position: relative;
+    background-color: #948f8f;
+
+}
+
+#www{
+    left: 27.6%;
+    margin-top: 1.5vw;
+    position: relative;
+
+}
+#www h5{
+    font-family: plain light;
+    font-size: 1vw;
+}
+
+#page5{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #151515;
 }
