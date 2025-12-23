@@ -497,4 +497,81 @@ body {
     min-height: 100vh;
     width: 100%;
     background-color: #151515;
+    position: relative;
+}
+
+.elem{
+    white-space: nowrap;
+    overflow-x: hidden;
+    /* background-color: aqua; */
+    margin-bottom: -1.5%;
+   
+}
+
+.elem h1{
+    margin-top: -1.5%;
+    font-family: plain light;
+    font-size: 7vw;
+    -webkit-text-stroke: 0.08vw #fff;
+    font-weight: 400;
+    color:#151515;
+    display: inline-block;
+    margin-right: 2.1vw;
+    animation-name: anime2;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.elem:nth-child(1){
+    padding-top: 8%;
+}
+
+@keyframes anime2{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
+.elem2{
+    white-space: nowrap;
+    overflow-x: hidden;
+    /* background-color: red; */
+    margin-bottom: -1.5%;
+}
+
+.elem2 h1{
+    margin-top: -1.5%;
+    font-family: plain light;
+    font-size: 7vw;
+    -webkit-text-stroke: 0.08vw #fff;
+    font-weight: 400;
+    color:#151515;
+    display: inline-block;
+    margin-right: 2.1vw;
+    animation-name: anime3;
+    animation-duration: 19s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes anime3{
+    from{
+        transform: translateX(calc(-100% - 2.1vw));
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+.elem span, .elem2 span{
+    font-family: silk serif;
+      font-size: 7vw;
+    -webkit-text-stroke: 0.08vw #fff;
+    font-weight: 400;
+    color:#151515;
 }
