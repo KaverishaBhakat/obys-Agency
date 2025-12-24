@@ -493,85 +493,86 @@ body {
     font-size: 1vw;
 }
 
-#page5{
+#page5 {
     min-height: 100vh;
     width: 100%;
     background-color: #151515;
     position: relative;
+    padding-top: 18vh;
 }
 
-.elem{
+.elem {
     white-space: nowrap;
-    overflow-x: hidden;
-    /* background-color: aqua; */
-    margin-bottom: -1.5%;
-   
+    overflow: hidden;
+    /* margin-bottom: 1vw; */
+    margin-top: -1vw;
+    display: flex;
 }
 
-.elem h1{
-    margin-top: -1.5%;
-    font-family: plain light;
-    font-size: 7vw;
-    -webkit-text-stroke: 0.08vw #fff;
-    font-weight: 400;
-    color:#151515;
-    display: inline-block;
-    margin-right: 2.1vw;
-    animation-name: anime2;
-    animation-duration: 15s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+.elem2 {
+    white-space: nowrap;
+    overflow: hidden;
+    /* margin-bottom: 1vw; */
+    margin-top: -1vw;
+ 
+    display: flex;
 }
-
 .elem:nth-child(1){
-    padding-top: 8%;
+    margin-bottom: -2.9vw;
+}
+.elem:nth-child(2){
+    margin-top: -2.9vw;
+    
+}
+.elem:nth-child(3){
+    margin-top: -2.6vw;
+    margin-bottom: -2.9vw;
+
 }
 
-@keyframes anime2{
-    from{
-        transform: translateX(0);
-    }
-    to{
-        transform: translateX(calc(-100% - 20px));
-    }
+.moving-strip, .moving-strip-reverse {
+    display: flex;
+    flex-shrink: 0;
 }
 
-.elem2{
-    white-space: nowrap;
-    overflow-x: hidden;
-    /* background-color: red; */
-    margin-bottom: -1.5%;
+.moving-strip {
+    animation: marqueeLeft 20s linear infinite;
 }
 
-.elem2 h1{
-    margin-top: -1.5%;
-    font-family: plain light;
+.moving-strip-reverse {
+    animation: marqueeRight 20s linear infinite;
+}
+
+.elem h1, .elem2 h1 {
+    font-family: "plain light";
     font-size: 7vw;
     -webkit-text-stroke: 0.08vw #fff;
     font-weight: 400;
-    color:#151515;
-    display: inline-block;
-    margin-right: 2.1vw;
-    animation-name: anime3;
-    animation-duration: 19s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    color: #151515;
+    text-transform: uppercase;
+    padding-right: 2vw; 
+    flex-shrink: 0;
 }
 
-
-@keyframes anime3{
-    from{
-        transform: translateX(calc(-100% - 2.1vw));
-    }
-    to{
-        transform: translateX(0);
-    }
-}
-
-.elem span, .elem2 span{
-    font-family: silk serif;
-      font-size: 7vw;
+.elem span, .elem2 span {
+    font-family: "silk serif";
     -webkit-text-stroke: 0.08vw #fff;
-    font-weight: 400;
-    color:#151515;
+    color: #151515;
+    font-style: italic;
+}
+
+@keyframes marqueeLeft {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+@keyframes marqueeRight {
+    from { transform: translateX(-50%); }
+    to { transform: translateX(0); }
+}
+
+#footer{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #151515;
 }
