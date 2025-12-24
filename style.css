@@ -355,7 +355,7 @@ body {
     /* border-bottom: 0.15vw solid #837d7d; */
 }
 
-#content3 #underline1{
+#content3 #underline1 {
     width: 100%;
     height: 0.10vw;
     margin-top: 7.8%;
@@ -472,7 +472,7 @@ body {
 }
 
 
-#underline2{
+#underline2 {
     width: 67.2vw;
     left: 27.6%;
     height: 0.10vw;
@@ -482,13 +482,14 @@ body {
 
 }
 
-#www{
+#www {
     left: 27.6%;
     margin-top: 1.5vw;
     position: relative;
 
 }
-#www h5{
+
+#www h5 {
     font-family: plain light;
     font-size: 1vw;
 }
@@ -504,7 +505,6 @@ body {
 .elem {
     white-space: nowrap;
     overflow: hidden;
-    /* margin-bottom: 1vw; */
     margin-top: -1vw;
     display: flex;
 }
@@ -512,25 +512,25 @@ body {
 .elem2 {
     white-space: nowrap;
     overflow: hidden;
-    /* margin-bottom: 1vw; */
     margin-top: -1vw;
- 
     display: flex;
 }
-.elem:nth-child(1){
+
+.elem:nth-child(1) {
     margin-bottom: -2.9vw;
 }
-.elem:nth-child(2){
+
+.elem:nth-child(2) {
     margin-top: -2.9vw;
-    
 }
-.elem:nth-child(3){
+
+.elem:nth-child(3) {
     margin-top: -2.6vw;
     margin-bottom: -2.9vw;
-
 }
 
-.moving-strip, .moving-strip-reverse {
+.moving-strip,
+.moving-strip-reverse {
     display: flex;
     flex-shrink: 0;
 }
@@ -543,18 +543,20 @@ body {
     animation: marqueeRight 20s linear infinite;
 }
 
-.elem h1, .elem2 h1 {
+.elem h1,
+.elem2 h1 {
     font-family: "plain light";
     font-size: 7vw;
     -webkit-text-stroke: 0.08vw #fff;
     font-weight: 400;
     color: #151515;
     text-transform: uppercase;
-    padding-right: 2vw; 
+    padding-right: 2vw;
     flex-shrink: 0;
 }
 
-.elem span, .elem2 span {
+.elem span,
+.elem2 span {
     font-family: "silk serif";
     -webkit-text-stroke: 0.08vw #fff;
     color: #151515;
@@ -562,17 +564,104 @@ body {
 }
 
 @keyframes marqueeLeft {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
 }
 
 @keyframes marqueeRight {
-    from { transform: translateX(-50%); }
-    to { transform: translateX(0); }
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
 }
 
-#footer{
-    min-height: 100vh;
+#footer {
+    min-height: 145vh;
     width: 100%;
     background-color: #151515;
+    position: relative;
+    padding-left: 27.5vw;
+    padding-top: 13vh;
+}
+
+#footer h1 {
+    font-size: 7.2vw;
+    font-weight: 600;
+    font-family: plain light;
+    color: #fff;
+    letter-spacing: 0.1vw;
+
+}
+
+.underline {
+    width: 67.2vw;
+    height: 0.16vw;
+    margin-top: 7.5%;
+    position: relative;
+    background-color: #c4bbbb;
+}
+
+#footer-div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 6.45vw;
+    width: 67.2vw;
+}
+
+#footer-div h6 {
+    font-size: 1.05vw;
+    font-family: plain light;
+    margin-bottom: 1.87vw;
+}
+
+#footer-div h5 {
+    font-size: 1.73vw;
+    margin: 0.2vh 0;
+    font-family: plain light;
+    line-height: 1.74vw;
+}
+
+.box {
+    width: 31%;
+}
+
+.underline4 {
+    width: 67.2vw;
+    height: 0.10vw;
+    margin-top: 10.8%;
+    position: relative;
+    background-color: #a7a0a0;
+}
+
+#footer #counting2 {
+    height: 5vw;
+    width: 5vw;
+    position: absolute;
+    left: 17.9%;
+    top: 10%;
+    overflow: hidden;
+}
+
+#counting2 h2 {
+    font-family: silk serif;
+    font-size: 3.22vw;
+}
+
+.utext {
+    margin-top: 2.5vw;
+    position: relative;
+}
+
+.utext h3 {
+    font-family: plain light;
+    font-size: 1.02vw;
 }
